@@ -41,7 +41,7 @@ class AsioConan(ConanFile):
             self.requires.add("boost/1.69.0@conan/stable")
 
         if self.options.with_openssl:
-            self.requires.add("OpenSSL/1.0.2x_latest@conan/stable")
+            self.requires.add("OpenSSL/1.1.1a@conan/stable")
 
     def source(self):
         archive_name = "asio-" + self.version.replace(".", "-")
