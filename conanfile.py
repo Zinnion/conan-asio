@@ -38,10 +38,10 @@ class AsioConan(ConanFile):
 
     def requirements(self):
         if self.options.with_boost_regex:
-            self.requires.add("boost/1.69.0@conan/stable")
+            self.requires.add("boost/1.69.0@zinnion/stable")
 
         if self.options.with_openssl:
-            self.requires.add("OpenSSL/1.1.1a@conan/stable")
+            self.requires.add("OpenSSL/1.1.1b@zinnion/stable")
 
     def source(self):
         archive_name = "asio-" + self.version.replace(".", "-")
